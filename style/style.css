@@ -132,3 +132,42 @@ section{
     transition: all .50s ease;
     cursor: pointer;
 }
+.btn:hover{
+    transform: translateX(10px);
+    border: 2px solid var(--text-color);
+    background: transparent;
+     color: var(--text-color);
+}
+.feature-contain{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
+    text-align: center;
+    align-items: center;
+    gap: 3rem;
+}
+.row-img{
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.row-img img{
+    width: 100%;
+    display: block;
+    transition: transform 0.7s;
+}
+.row-img img:hover{
+    transform: scale(1.2);
+}
+.feature-contain h4{
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .50s ease;
+}
+.feature-contain h4:hover{
+    color: var(--main-color);
+}
